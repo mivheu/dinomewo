@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DinoWiki — Enciclopedia de Dinosaurios</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">🦕</span>
+        <div class="logo-text">
+          <h1>DinoWiki</h1>
+          <p>Enciclopedia Ilustrada del Mesozoico</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <a href="#triasico">Triásico</a>
+        <a href="#jurasico">Jurásico</a>
+        <a href="#cretacico">Cretácico</a>
+        <a href="#galeria">Galería</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-kicker">Más de 230 millones de años de historia</p>
+      <h2 class="hero-title">Los señores de la<br><em>Tierra Prehistórica</em></h2>
+      <p class="hero-sub">Explora géneros, órdenes y datos fascinantes de los reptiles que dominaron el planeta durante la era Mesozoica.</p>
+    </div>
+    <!-- 📸 IMAGEN SUGERIDA: Panorama de un paisaje jurásico con siluetas de dinosaurios al atardecer (formato banner 1600×600 px) -->
+    <div class="hero-image-placeholder">
+      <span>📸 IMAGEN RECOMENDADA: Paisaje jurásico panorámico (1600 × 600 px)</span>
+    </div>
+  </section>
+
+  <!-- ===== INTRODUCCIÓN ===== -->
+  <section class="intro container">
+    <h2 class="section-title">¿Qué son los dinosaurios?</h2>
+    <div class="intro-grid">
+      <div class="intro-text">
+        <p>Los <strong>dinosaurios</strong> (del griego <em>deinos</em>, terrible, y <em>sauros</em>, lagarto) son un grupo de reptiles arcosaurios que dominaron los ecosistemas terrestres durante el <strong>Mesozoico</strong>, hace entre 230 y 66 millones de años.</p>
+        <p>Se clasifican taxonómicamente en el clado <strong>Dinosauria</strong>, dividido en dos grandes órdenes: <em>Saurischia</em> (cadera de lagarto) y <em>Ornithischia</em> (cadera de ave). Esta distinción anatómica es la base de toda la clasificación moderna.</p>
+        <p>Paradójicamente, las aves actuales son dinosaurios terópodos que sobrevivieron a la extinción del Cretácico-Paleógeno, hace 66 Ma.</p>
+      </div>
+      <!-- 📸 IMAGEN SUGERIDA: Árbol filogenético de Dinosauria (ilustración científica, fondo blanco) -->
+      <div class="img-placeholder vertical">
+        <span>📸 IMAGEN RECOMENDADA<br>Árbol filogenético de Dinosauria<br>(ilustración, ~600 × 700 px)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TAXONOMÍA RÁPIDA ===== -->
+  <section class="taxonomy-bar">
+    <div class="container">
+      <h3>Clasificación general</h3>
+      <div class="taxon-cards">
+        <div class="taxon-card">
+          <p class="taxon-rank">Reino</p>
+          <p class="taxon-value">Animalia</p>
+        </div>
+        <div class="taxon-arrow">→</div>
+        <div class="taxon-card">
+          <p class="taxon-rank">Filo</p>
+          <p class="taxon-value">Chordata</p>
+        </div>
+        <div class="taxon-arrow">→</div>
+        <div class="taxon-card">
+          <p class="taxon-rank">Clase</p>
+          <p class="taxon-value">Reptilia</p>
+        </div>
+        <div class="taxon-arrow">→</div>
+        <div class="taxon-card highlight">
+          <p class="taxon-rank">Clado</p>
+          <p class="taxon-value">Dinosauria</p>
+        </div>
+        <div class="taxon-arrow">→</div>
+        <div class="taxon-card">
+          <p class="taxon-rank">Órdenes</p>
+          <p class="taxon-value">Saurischia / Ornithischia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ERA: TRIÁSICO ===== -->
+  <section id="triasico" class="era-section triasico">
+    <div class="era-header container">
+      <span class="era-badge">252 – 201 Ma</span>
+      <h2>Período Triásico</h2>
+      <p>Los primeros dinosaurios eran bípedos pequeños que convivían con otros arcosaurios. El clima era árido y las masas continentales formaban la Pangea.</p>
+    </div>
+
+    <!-- DINO CARD: Eoraptor -->
+    <article class="dino-card container" id="eoraptor">
+      <div class="dino-card-header">
+        <div>
+          <h3 class="dino-name">Eoraptor lunensis</h3>
+          <p class="dino-pronunc">/ e·o·RÁP·tor lu·NEN·sis /</p>
+        </div>
+        <span class="dino-period">Triásico Tardío · ~231 Ma</span>
+      </div>
+
+      <div class="dino-body">
+        <!-- 📸 IMAGEN SUGERIDA: Ilustración científica de Eoraptor (perfil lateral, fondo transparente o blanco) -->
+        <div class="img-placeholder">
+          <span>📸 IMAGEN: Eoraptor lunensis<br>Ilustración científica lateral<br>(~700 × 400 px)</span>
+        </div>
+
+        <div class="dino-info">
+          <table class="info-table">
+            <tr><th>Género</th><td><em>Eoraptor</em></td></tr>
+            <tr><th>Especie tipo</th><td><em>E. lunensis</em></td></tr>
+            <tr><th>Orden</th><td>Saurischia</td></tr>
+            <tr><th>Suborden</th><td>Eusaurischia (debatido)</td></tr>
+            <tr><th>Familia</th><td>Eoraptorinae</td></tr>
+            <tr><th>Dieta</th><td>Omnívora</td></tr>
+            <tr><th>Longitud</th><td>~1 metro</td></tr>
+            <tr><th>Peso</th><td>~10 kg</td></tr>
+            <tr><th>Descubierto</th><td>Argentina, 1991</td></tr>
+            <tr><th>Descubridor</th><td>Paul Sereno</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="dino-desc">
+        <h4>Descripción</h4>
+        <p>Uno de los dinosaurios más primitivos conocidos. <em>Eoraptor</em> era un pequeño bípedo ágil con dientes mixtos (algunos foliáceos, otros cónicos), lo que sugiere una dieta omnívora. Su descubrimiento en la Formación Ischigualasto (Argentina) fue clave para entender los orígenes del grupo.</p>
+        <p>Aunque inicialmente clasificado como terópodo basal, estudios recientes sugieren que podría ser un sauropodomorfo temprano, lo que ilustra la complejidad de la filogenia dinosauriana primitiva.</p>
+      </div>
+
+      <!-- 🎬 VIDEO SUGERIDO: Documental o animación 3D de Eoraptor en movimiento -->
+      <div class="media-placeholder video">
+        <span>🎬 VIDEO RECOMENDADO: Animación 3D o fragmento documental de Eoraptor<br>(embed YouTube, ~560 × 315 px)</span>
+      </div>
+    </article>
+
+    <!-- DINO CARD: Herrerasaurus -->
+    <article class="dino-card container" id="herrerasaurus">
+      <div class="dino-card-header">
+        <div>
+          <h3 class="dino-name">Herrerasaurus ischigualastensis</h3>
+          <p class="dino-pronunc">/ he·rre·ra·SÁU·rus /</p>
+        </div>
+        <span class="dino-period">Triásico Tardío · ~231 Ma</span>
+      </div>
+
+      <div class="dino-body">
+        <!-- 📸 IMAGEN SUGERIDA: Ilustración o foto de fósil de Herrerasaurus -->
+        <div class="img-placeholder">
+          <span>📸 IMAGEN: Herrerasaurus<br>Ilustración o reconstrucción<br>(~700 × 400 px)</span>
+        </div>
+
+        <div class="dino-info">
+          <table class="info-table">
+            <tr><th>Género</th><td><em>Herrerasaurus</em></td></tr>
+            <tr><th>Especie tipo</th><td><em>H. ischigualastensis</em></td></tr>
+            <tr><th>Orden</th><td>Saurischia</td></tr>
+            <tr><th>Suborden</th><td>Herrerasauridae</td></tr>
+            <tr><th>Dieta</th><td>Carnívora</td></tr>
+            <tr><th>Longitud</th><td>3–6 metros</td></tr>
+            <tr><th>Peso</th><td>~210–350 kg</td></tr>
+            <tr><th>Descubierto</th><td>Argentina, 1958</td></tr>
+            <tr><th>Descubridor</th><td>Victorino Herrera</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="dino-desc">
+        <h4>Descripción</h4>
+        <p>Uno de los depredadores más grandes de su época, <em>Herrerasaurus</em> poseía mandíbulas articuladas hacia atrás que le permitían sujetar presas con mayor fuerza. Es uno de los primeros grandes carnívoros conocidos y su posición en el árbol evolutivo ha sido debatida durante décadas.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===== ERA: JURÁSICO ===== -->
+  <section id="jurasico" class="era-section jurasico">
+    <div class="era-header container">
+      <span class="era-badge">201 – 145 Ma</span>
+      <h2>Período Jurásico</h2>
+      <p>La época dorada de los grandes saurópodos y la diversificación de los terópodos. Pangea comenzó a fragmentarse y los bosques de helechos y coníferas cubrían el planeta.</p>
+    </div>
+
+    <!-- DINO CARD: Brachiosaurus -->
+    <article class="dino-card container" id="brachiosaurus">
+      <div class="dino-card-header">
+        <div>
+          <h3 class="dino-name">Brachiosaurus altithorax</h3>
+          <p class="dino-pronunc">/ bra·quio·SÁU·rus al·ti·THO·rax /</p>
+        </div>
+        <span class="dino-period">Jurásico Tardío · ~154–153 Ma</span>
+      </div>
+
+      <div class="dino-body">
+        <!-- 📸 IMAGEN SUGERIDA: Ilustración de Brachiosaurus mostrando su característico cuello largo -->
+        <div class="img-placeholder">
+          <span>📸 IMAGEN: Brachiosaurus altithorax<br>Ilustración completa mostrando proporción de cuello<br>(~700 × 450 px)</span>
+        </div>
+
+        <div class="dino-info">
+          <table class="info-table">
+            <tr><th>Género</th><td><em>Brachiosaurus</em></td></tr>
+            <tr><th>Especie tipo</th><td><em>B. altithorax</em></td></tr>
+            <tr><th>Orden</th><td>Saurischia</td></tr>
+            <tr><th>Suborden</th><td>Sauropodomorpha</td></tr>
+            <tr><th>Infraorden</th><td>Sauropoda</td></tr>
+            <tr><th>Familia</th><td>Brachiosauridae</td></tr>
+            <tr><th>Dieta</th><td>Herbívora</td></tr>
+            <tr><th>Longitud</th><td>20–26 metros</td></tr>
+            <tr><th>Altura</th><td>~9–12 metros</td></tr>
+            <tr><th>Peso</th><td>28–58 toneladas</td></tr>
+            <tr><th>Descubierto</th><td>EE.UU. (Colorado), 1900</td></tr>
+            <tr><th>Descubridor</th><td>Elmer Riggs</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="dino-desc">
+        <h4>Descripción</h4>
+        <p>A diferencia de la mayoría de saurópodos, <em>Brachiosaurus</em> tenía las extremidades delanteras más largas que las traseras, lo que le daba una postura inclinada hacia adelante similar a una jirafa moderna. Esto le permitía alcanzar el follaje de las copas de los árboles más altos.</p>
+        <p>Con un cuello de hasta 9 metros, era capaz de explotar recursos alimenticios inaccesibles para otros herbívoros. Su corazón debía bombear sangre con una presión extraordinaria para irrigar el cerebro.</p>
+      </div>
+
+      <!-- 🎞️ GIF SUGERIDO: Animación de Brachiosaurus caminando o comiendo hojas -->
+      <div class="media-placeholder gif">
+        <span>🎞️ GIF RECOMENDADO: Brachiosaurus caminando o alimentándose<br>(ancho ~600 px, loop infinito)</span>
+      </div>
+    </article>
+
+    <!-- DINO CARD: Stegosaurus -->
+    <article class="dino-card container" id="stegosaurus">
+      <div class="dino-card-header">
+        <div>
+          <h3 class="dino-name">Stegosaurus stenops</h3>
+          <p class="dino-pronunc">/ este·go·SÁU·rus STE·nops /</p>
+        </div>
+        <span class="dino-period">Jurásico Tardío · ~155–150 Ma</span>
+      </div>
+
+      <div class="dino-body">
+        <!-- 📸 IMAGEN SUGERIDA: Ilustración de Stegosaurus mostrando las placas dorsales y la cola con púas -->
+        <div class="img-placeholder">
+          <span>📸 IMAGEN: Stegosaurus stenops<br>Vista lateral mostrando placas y thagomizer<br>(~700 × 400 px)</span>
+        </div>
+
+        <div class="dino-info">
+          <table class="info-table">
+            <tr><th>Género</th><td><em>Stegosaurus</em></td></tr>
+            <tr><th>Especie tipo</th><td><em>S. stenops</em></td></tr>
+            <tr><th>Orden</th><td>Ornithischia</td></tr>
+            <tr><th>Suborden</th><td>Thyreophora</td></tr>
+            <tr><th>Familia</th><td>Stegosauridae</td></tr>
+            <tr><th>Dieta</th><td>Herbívora</td></tr>
+            <tr><th>Longitud</th><td>~9 metros</td></tr>
+            <tr><th>Peso</th><td>~5 toneladas</td></tr>
+            <tr><th>Descubierto</th><td>EE.UU., 1877</td></tr>
+            <tr><th>Descubridor</th><td>Othniel C. Marsh</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="dino-desc">
+        <h4>Descripción</h4>
+        <p>Icónico por las grandes placas óseas a lo largo de su espalda, <em>Stegosaurus</em> es uno de los dinosaurios más reconocibles. Las placas probablemente cumplían funciones de termorregulación o exhibición. En la cola portaba cuatro púas óseas (<strong>thagomizer</strong>) usadas como defensa activa contra depredadores.</p>
+        <p>Curiosamente, su cerebro era del tamaño de una nuez en relación a su cuerpo, aunque esto no es inusual entre los dinosaurios herbívoros.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===== ERA: CRETÁCICO ===== -->
+  <section id="cretacico" class="era-section cretacico">
+    <div class="era-header container">
+      <span class="era-badge">145 – 66 Ma</span>
+      <h2>Período Cretácico</h2>
+      <p>El período más largo y diverso. Aparecen los dinosaurios con cuernos, crestas y armaduras. Los terópodos alcanzan su apogeo evolutivo. El período termina con la extinción masiva del K-Pg.</p>
+    </div>
+
+    <!-- DINO CARD: T. Rex -->
+    <article class="dino-card container featured" id="trex">
+      <div class="dino-card-header">
+        <div>
+          <h3 class="dino-name">Tyrannosaurus rex</h3>
+          <p class="dino-pronunc">/ ti·ra·no·SÁU·rus rex /</p>
+        </div>
+        <span class="dino-period">Cretácico Tardío · ~68–66 Ma</span>
+      </div>
+
+      <div class="dino-body">
+        <!-- 📸 IMAGEN SUGERIDA: Ilustración de alta calidad del T.rex, preferiblemente con plumas en partes del cuerpo (investigaciones actuales) -->
+        <div class="img-placeholder">
+          <span>📸 IMAGEN PRINCIPAL: Tyrannosaurus rex<br>Ilustración científica moderna (con posible plumaje)<br>(~700 × 500 px)</span>
+        </div>
+
+        <div class="dino-info">
+          <table class="info-table">
+            <tr><th>Género</th><td><em>Tyrannosaurus</em></td></tr>
+            <tr><th>Especie tipo</th><td><em>T. rex</em></td></tr>
+            <tr><th>Orden</th><td>Saurischia</td></tr>
+            <tr><th>Suborden</th><td>Theropoda</td></tr>
+            <tr><th>Familia</th><td>Tyrannosauridae</td></tr>
+            <tr><th>Dieta</th><td>Carnívora / Carroñera</td></tr>
+            <tr><th>Longitud</th><td>12–13 metros</td></tr>
+            <tr><th>Altura</th><td>~4 metros (caderas)</td></tr>
+            <tr><th>Peso</th><td>8–14 toneladas</td></tr>
+            <tr><th>Fuerza de mordida</th><td>~35.000–57.000 N</td></tr>
+            <tr><th>Descubierto</th><td>EE.UU., 1905</td></tr>
+            <tr><th>Descubridor</th><td>Henry Fairfield Osborn</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="dino-desc">
+        <h4>Descripción</h4>
+        <p><em>Tyrannosaurus rex</em> es el depredador terrestre más estudiado de la historia. Poseía la mordida más fuerte de cualquier animal terrestre conocido, capaz de triturar hueso. Sus diminutos brazos, lejos de ser vestigiales, probablemente cumplían funciones de sujeción durante la cópula o para levantarse del suelo.</p>
+        <p>Evidencia reciente sugiere que podría haber tenido labios que cubrían sus dientes (como los lagartos actuales) y quizás plumas dispersas en partes del cuerpo. Su sentido del olfato era extraordinariamente desarrollado.</p>
+        <blockquote class="dino-fact">
+          <strong>Dato curioso:</strong> El T. rex vivió más cerca en el tiempo de nosotros que de los <em>Stegosaurus</em>. Los separaban más de 80 millones de años.
+        </blockquote>
+      </div>
+
+      <!-- 🎬 VIDEO SUGERIDO: Documental de National Geographic o BBC sobre el T. rex -->
+      <div class="media-placeholder video">
+        <span>🎬 VIDEO RECOMENDADO: BBC/NatGeo — Documental sobre Tyrannosaurus rex<br>(embed YouTube ~560 × 315 px)</span>
+      </div>
+
+      <!-- 🎞️ GIF SUGERIDO: T. rex rugiendo o corriendo -->
+      <div class="media-placeholder gif small">
+        <span>🎞️ GIF: T. rex rugiendo o en movimiento (ancho ~400 px)</span>
+      </div>
+    </article>
+
+    <!-- DINO CARD: Triceratops -->
+    <article class="dino-card container" id="triceratops">
+      <div class="dino-card-header">
+        <div>
+          <h3 class="dino-name">Triceratops horridus</h3>
+          <p class="dino-pronunc">/ tri·CE·ra·tops HO·rri·dus /</p>
+        </div>
+        <span class="dino-period">Cretácico Tardío · ~68–66 Ma</span>
+      </div>
+
+      <div class="dino-body">
+        <!-- 📸 IMAGEN SUGERIDA: Vista frontal de Triceratops mostrando sus tres cuernos y el collar óseo -->
+        <div class="img-placeholder">
+          <span>📸 IMAGEN: Triceratops horridus<br>Vista ¾ mostrando cuernos y collar (frills)<br>(~700 × 400 px)</span>
+        </div>
+
+        <div class="dino-info">
+          <table class="info-table">
+            <tr><th>Género</th><td><em>Triceratops</em></td></tr>
+            <tr><th>Especie tipo</th><td><em>T. horridus</em></td></tr>
+            <tr><th>Orden</th><td>Ornithischia</td></tr>
+            <tr><th>Suborden</th><td>Marginocephalia</td></tr>
+            <tr><th>Familia</th><td>Ceratopsidae</td></tr>
+            <tr><th>Dieta</th><td>Herbívora</td></tr>
+            <tr><th>Longitud</th><td>8–9 metros</td></tr>
+            <tr><th>Peso</th><td>6–12 toneladas</td></tr>
+            <tr><th>Descubierto</th><td>EE.UU., 1889</td></tr>
+            <tr><th>Descubridor</th><td>Othniel C. Marsh</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="dino-desc">
+        <h4>Descripción</h4>
+        <p><em>Triceratops</em> es uno de los ceratópsidos más grandes y robustos. Su cráneo, que podía medir hasta 2,5 metros, es uno de los más grandes de cualquier animal terrestre conocido. Los tres cuernos (dos frontales y uno nasal) y el gran collar óseo (<em>frill</em>) servían tanto para defensa como para exhibición y reconocimiento entre individuos.</p>
+        <p>Era contemporáneo del <em>T. rex</em> y probablemente constituyó una de sus presas principales. Fósiles muestran evidencia de interacciones directas entre ambas especies.</p>
+      </div>
+    </article>
+
+    <!-- DINO CARD: Velociraptor -->
+    <article class="dino-card container" id="velociraptor">
+      <div class="dino-card-header">
+        <div>
+          <h3 class="dino-name">Velociraptor mongoliensis</h3>
+          <p class="dino-pronunc">/ ve·lo·ci·RAP·tor mon·go·lien·sis /</p>
+        </div>
+        <span class="dino-period">Cretácico Tardío · ~75–71 Ma</span>
+      </div>
+
+      <div class="dino-body">
+        <!-- 📸 IMAGEN SUGERIDA: Ilustración de Velociraptor CON plumas (representación científicamente precisa) -->
+        <div class="img-placeholder">
+          <span>📸 IMAGEN: Velociraptor mongoliensis<br>⚠️ Ilustración CON plumas (representación correcta)<br>(~700 × 400 px)</span>
+        </div>
+
+        <div class="dino-info">
+          <table class="info-table">
+            <tr><th>Género</th><td><em>Velociraptor</em></td></tr>
+            <tr><th>Especie tipo</th><td><em>V. mongoliensis</em></td></tr>
+            <tr><th>Orden</th><td>Saurischia</td></tr>
+            <tr><th>Suborden</th><td>Theropoda</td></tr>
+            <tr><th>Familia</th><td>Dromaeosauridae</td></tr>
+            <tr><th>Dieta</th><td>Carnívora</td></tr>
+            <tr><th>Longitud</th><td>~2 metros</td></tr>
+            <tr><th>Peso</th><td>~15–25 kg</td></tr>
+            <tr><th>Descubierto</th><td>Mongolia, 1923</td></tr>
+            <tr><th>Descubridor</th><td>Peter Kaisen</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="dino-desc">
+        <h4>Descripción</h4>
+        <p>Contrario a su imagen popular (creada por Jurassic Park), el <em>Velociraptor</em> real era del tamaño de un pavo grande y estaba cubierto de plumas. La famosa "garra en hoz" de su segundo dedo probablemente se usaba para sujetar presas, no para rajar.</p>
+        <blockquote class="dino-fact">
+          <strong>Mito vs. Ciencia:</strong> El "raptor" de Jurassic Park está basado en realidad en el <em>Deinonychus</em>, un pariente americano más grande. El <em>Velociraptor</em> real tenía plumas y era mucho más pequeño.
+        </blockquote>
+      </div>
+
+      <!-- 🎞️ GIF SUGERIDO: Comparación Velociraptor real vs. película -->
+      <div class="media-placeholder gif">
+        <span>🎞️ GIF o IMAGEN COMPARATIVA: Velociraptor real (con plumas) vs. versión de película<br>(ancho ~600 px)</span>
+      </div>
+    </article>
+  </section>
+
+  <!-- ===== GALERÍA ===== -->
+  <section id="galeria" class="gallery-section container">
+    <h2 class="section-title">Galería del Mesozoico</h2>
+    <p class="gallery-intro">Una selección visual de los períodos y ecosistemas que albergaron a los dinosaurios.</p>
+
+    <div class="gallery-grid">
+      <!-- 📸 IMAGEN: Paisaje del Triásico -->
+      <div class="gallery-item img-placeholder">
+        <span>📸 Paisaje del Triásico<br>(cuadrado ~400 × 400 px)</span>
+      </div>
+      <!-- 📸 IMAGEN: Bosque jurásico con dinosaurios -->
+      <div class="gallery-item img-placeholder">
+        <span>📸 Bosque jurásico<br>(cuadrado ~400 × 400 px)</span>
+      </div>
+      <!-- 📸 IMAGEN: Impacto del meteorito K-Pg -->
+      <div class="gallery-item img-placeholder">
+        <span>📸 Extinción K-Pg<br>(cuadrado ~400 × 400 px)</span>
+      </div>
+      <!-- 📸 IMAGEN: Fósil real de dinosaurio -->
+      <div class="gallery-item img-placeholder">
+        <span>📸 Fósil real (museo)<br>(cuadrado ~400 × 400 px)</span>
+      </div>
+      <!-- 🎬 VIDEO: Documental completo o tráiler -->
+      <div class="gallery-item img-placeholder video">
+        <span>🎬 VIDEO: Documental Mesozoico<br>(16:9 ~560 × 315 px)</span>
+      </div>
+      <!-- 🎞️ GIF: Extinción masiva o evolución de las aves -->
+      <div class="gallery-item img-placeholder">
+        <span>🎞️ GIF: Evolución dinosaurios → aves<br>(ancho ~400 px)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TABLA COMPARATIVA ===== -->
+  <section class="compare-section container">
+    <h2 class="section-title">Comparativa de especies</h2>
+    <div class="table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Género</th>
+            <th>Orden</th>
+            <th>Período</th>
+            <th>Dieta</th>
+            <th>Longitud</th>
+            <th>Peso</th>
+            <th>Región</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><em>Eoraptor</em></td>
+            <td>Saurischia</td>
+            <td>Triásico Tardío</td>
+            <td>Omnívora</td>
+            <td>~1 m</td>
+            <td>~10 kg</td>
+            <td>Sudamérica</td>
+          </tr>
+          <tr>
+            <td><em>Herrerasaurus</em></td>
+            <td>Saurischia</td>
+            <td>Triásico Tardío</td>
+            <td>Carnívora</td>
+            <td>3–6 m</td>
+            <td>~350 kg</td>
+            <td>Sudamérica</td>
+          </tr>
+          <tr>
+            <td><em>Brachiosaurus</em></td>
+            <td>Saurischia</td>
+            <td>Jurásico Tardío</td>
+            <td>Herbívora</td>
+            <td>20–26 m</td>
+            <td>58 t</td>
+            <td>Norteamérica</td>
+          </tr>
+          <tr>
+            <td><em>Stegosaurus</em></td>
+            <td>Ornithischia</td>
+            <td>Jurásico Tardío</td>
+            <td>Herbívora</td>
+            <td>~9 m</td>
+            <td>~5 t</td>
+            <td>Norteamérica</td>
+          </tr>
+          <tr>
+            <td><em>Velociraptor</em></td>
+            <td>Saurischia</td>
+            <td>Cretácico Tardío</td>
+            <td>Carnívora</td>
+            <td>~2 m</td>
+            <td>~25 kg</td>
+            <td>Asia Central</td>
+          </tr>
+          <tr>
+            <td><em>Triceratops</em></td>
+            <td>Ornithischia</td>
+            <td>Cretácico Tardío</td>
+            <td>Herbívora</td>
+            <td>8–9 m</td>
+            <td>12 t</td>
+            <td>Norteamérica</td>
+          </tr>
+          <tr class="featured-row">
+            <td><em>T. rex</em></td>
+            <td>Saurischia</td>
+            <td>Cretácico Tardío</td>
+            <td>Carnívora</td>
+            <td>12–13 m</td>
+            <td>14 t</td>
+            <td>Norteamérica</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-logo">🦕 DinoWiki</p>
+        <p>Enciclopedia Ilustrada del Mesozoico</p>
+      </div>
+      <div>
+        <p><strong>Fuentes científicas</strong></p>
+        <p>Paleobiology Database · Natural History Museum · AMNH · SVP</p>
+      </div>
+      <div>
+        <p><strong>Aviso</strong></p>
+        <p>Contenido de carácter divulgativo. La taxonomía dinosauriana se actualiza constantemente con nuevos hallazgos.</p>
+      </div>
+    </div>
+    <p class="footer-copy">© 2025 DinoWiki. Contenido bajo Creative Commons BY-NC.</p>
+  </footer>
+
+</body>
+</html>

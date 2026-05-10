@@ -1,0 +1,647 @@
+/* ============================================
+   DinoWiki — Estilos principales
+   Paleta: tierra cálida, verde musgo, ámbar fósil
+   Tipografía: Playfair Display + Source Serif 4
+   ============================================ */
+
+/* --- VARIABLES --- */
+:root {
+  --bg:          #f5f0e8;
+  --bg-alt:      #ede7d9;
+  --surface:     #fff9f0;
+  --border:      #d4c9b0;
+
+  --text:        #2c2416;
+  --text-muted:  #6b5f4a;
+  --text-light:  #9a8d76;
+
+  --amber:       #b8860b;
+  --amber-light: #d4a017;
+  --amber-pale:  #f5e6b8;
+
+  --green:       #3d5a3e;
+  --green-light: #5a7f5c;
+  --green-pale:  #ddeadd;
+
+  --red-dark:    #7a2020;
+  --red-pale:    #f5dede;
+
+  --era-triasico:  #c17f3a;
+  --era-jurasico:  #4a7c59;
+  --era-cretacico: #6b4c8a;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Source Serif 4', Georgia, serif;
+
+  --radius:  6px;
+  --radius-lg: 12px;
+  --shadow:  0 2px 12px rgba(44,36,22,.10);
+  --shadow-lg: 0 6px 32px rgba(44,36,22,.16);
+}
+
+/* --- RESET & BASE --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 17px; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.75;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+
+a { color: var(--green); text-decoration: none; transition: color .2s; }
+a:hover { color: var(--amber); }
+
+em { font-style: italic; }
+strong { font-weight: 600; }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* --- PLACEHOLDERS DE MEDIOS ---
+   (Quita estas clases cuando insertes imágenes/videos reales) */
+.img-placeholder,
+.media-placeholder {
+  background: var(--bg-alt);
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px 16px;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: .85rem;
+  line-height: 1.5;
+  min-height: 180px;
+}
+
+.img-placeholder.vertical { min-height: 280px; }
+
+.media-placeholder.video {
+  min-height: 220px;
+  background: #1a1008;
+  color: #b8a880;
+  border-color: #4a3c28;
+  margin-top: 24px;
+}
+
+.media-placeholder.gif {
+  min-height: 160px;
+  background: var(--green-pale);
+  border-color: var(--green-light);
+  margin-top: 20px;
+}
+
+.media-placeholder.gif.small { min-height: 110px; }
+
+/* ==================
+   HEADER
+================== */
+.site-header {
+  background: var(--text);
+  color: #f5e9cc;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 16px rgba(0,0,0,.4);
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo { display: flex; align-items: center; gap: 12px; }
+
+.logo-icon { font-size: 2rem; line-height: 1; }
+
+.logo-text h1 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--amber-light);
+  letter-spacing: .03em;
+  line-height: 1;
+}
+
+.logo-text p {
+  font-size: .72rem;
+  color: #b8a880;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.main-nav { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.main-nav a {
+  color: #c8b888;
+  font-family: var(--font-body);
+  font-size: .85rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  transition: all .2s;
+}
+
+.main-nav a:hover {
+  color: var(--amber-light);
+  border-color: var(--amber);
+}
+
+/* ==================
+   HERO
+================== */
+.hero {
+  background: var(--text);
+  color: #f0e8d0;
+  padding: 64px 24px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-content { max-width: 720px; margin: 0 auto 40px; }
+
+.hero-kicker {
+  font-size: .8rem;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--amber-light);
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 900;
+  line-height: 1.12;
+  color: #fff8ec;
+}
+
+.hero-title em {
+  color: var(--amber-light);
+  font-style: italic;
+}
+
+.hero-sub {
+  margin-top: 20px;
+  font-size: 1.05rem;
+  color: #c8b888;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-image-placeholder {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 220px;
+  background: #1a1008;
+  border-top: 1px solid #3a2e1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7a6a4a;
+  font-size: .85rem;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+/* ==================
+   INTRO
+================== */
+.intro {
+  padding: 64px 24px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 32px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--amber);
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.intro-text p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+/* ==================
+   TAXONOMY BAR
+================== */
+.taxonomy-bar {
+  background: var(--text);
+  color: #f0e8d0;
+  padding: 40px 24px;
+}
+
+.taxonomy-bar h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--amber-light);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.taxon-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.taxon-card {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius);
+  padding: 12px 18px;
+  text-align: center;
+  min-width: 110px;
+}
+
+.taxon-card.highlight {
+  background: var(--amber);
+  border-color: var(--amber-light);
+}
+
+.taxon-rank {
+  font-size: .68rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: #b8a880;
+  margin-bottom: 4px;
+}
+
+.taxon-card.highlight .taxon-rank { color: #4a2e00; }
+
+.taxon-value {
+  font-family: var(--font-display);
+  font-size: .95rem;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff8ec;
+}
+
+.taxon-card.highlight .taxon-value { color: #1a1008; }
+
+.taxon-arrow {
+  color: var(--amber-light);
+  font-size: 1.2rem;
+  opacity: .6;
+}
+
+/* ==================
+   ERA SECTIONS
+================== */
+.era-section { padding: 56px 0; }
+
+.era-section.triasico  { background: #fdf5ea; }
+.era-section.jurasico  { background: #eef5ee; }
+.era-section.cretacico { background: #f5eef8; }
+
+.era-header {
+  margin-bottom: 40px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.era-badge {
+  display: inline-block;
+  font-size: .7rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.triasico  .era-badge { background: #f5e0c0; color: #7a4a10; }
+.jurasico  .era-badge { background: #c8e6c8; color: #1a4a1e; }
+.cretacico .era-badge { background: #e8d0f0; color: #4a1a6a; }
+
+.era-header h2 {
+  font-family: var(--font-display);
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.triasico  .era-header h2 { color: var(--era-triasico); }
+.jurasico  .era-header h2 { color: var(--era-jurasico); }
+.cretacico .era-header h2 { color: var(--era-cretacico); }
+
+.era-header p {
+  color: var(--text-muted);
+  max-width: 640px;
+  font-size: .95rem;
+}
+
+/* ==================
+   DINO CARDS
+================== */
+.dino-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  margin-bottom: 40px;
+  box-shadow: var(--shadow);
+  transition: box-shadow .25s;
+}
+
+.dino-card:hover { box-shadow: var(--shadow-lg); }
+
+.dino-card.featured {
+  border-color: var(--amber);
+  box-shadow: 0 0 0 1px var(--amber), var(--shadow-lg);
+}
+
+.dino-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.dino-name {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.2;
+}
+
+.dino-pronunc {
+  font-size: .8rem;
+  color: var(--text-light);
+  letter-spacing: .04em;
+  margin-top: 4px;
+}
+
+.dino-period {
+  font-size: .78rem;
+  background: var(--amber-pale);
+  color: #6a4800;
+  padding: 6px 14px;
+  border-radius: 100px;
+  white-space: nowrap;
+  font-weight: 600;
+  letter-spacing: .03em;
+  align-self: flex-start;
+  margin-top: 4px;
+}
+
+.dino-body {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 28px;
+  margin-bottom: 28px;
+  align-items: start;
+}
+
+/* ---- Tabla informativa ---- */
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .88rem;
+}
+
+.info-table tr {
+  border-bottom: 1px solid var(--bg-alt);
+}
+
+.info-table tr:last-child { border-bottom: none; }
+
+.info-table th {
+  text-align: left;
+  padding: 8px 12px 8px 0;
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: .78rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 40%;
+}
+
+.info-table td {
+  padding: 8px 0;
+  color: var(--text);
+}
+
+.info-table td em { color: var(--green); }
+
+/* ---- Descripción ---- */
+.dino-desc { margin-top: 4px; }
+
+.dino-desc h4 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+  letter-spacing: .02em;
+}
+
+.dino-desc p {
+  margin-bottom: 14px;
+  font-size: .97rem;
+  color: var(--text);
+}
+
+/* ---- Blockquote / dato curioso ---- */
+.dino-fact {
+  background: var(--amber-pale);
+  border-left: 4px solid var(--amber);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 14px 18px;
+  margin: 20px 0;
+  font-size: .92rem;
+  color: #5a3c00;
+  font-style: normal;
+}
+
+/* ==================
+   GALERÍA
+================== */
+.gallery-section {
+  padding: 64px 24px;
+}
+
+.gallery-intro {
+  color: var(--text-muted);
+  margin-bottom: 32px;
+  font-size: .97rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gallery-item {
+  min-height: 200px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* ==================
+   TABLA COMPARATIVA
+================== */
+.compare-section {
+  padding: 64px 24px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .88rem;
+  background: var(--surface);
+}
+
+.compare-table thead {
+  background: var(--text);
+  color: var(--amber-pale);
+}
+
+.compare-table th {
+  padding: 14px 18px;
+  text-align: left;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.compare-table td {
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--bg-alt);
+  color: var(--text);
+}
+
+.compare-table td em { color: var(--green); font-style: italic; }
+
+.compare-table tbody tr:hover { background: var(--bg-alt); }
+
+.compare-table tr.featured-row {
+  background: var(--amber-pale);
+}
+
+.compare-table tr.featured-row td { font-weight: 600; color: #4a2e00; }
+
+/* ==================
+   FOOTER
+================== */
+.site-footer {
+  background: var(--text);
+  color: #b8a880;
+  padding: 48px 24px 24px;
+  margin-top: 40px;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #3a2e1c;
+  margin-bottom: 24px;
+}
+
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--amber-light);
+  margin-bottom: 6px;
+}
+
+.footer-inner p {
+  font-size: .83rem;
+  line-height: 1.6;
+}
+
+.footer-inner strong {
+  color: #d4c090;
+  display: block;
+  margin-bottom: 6px;
+  font-size: .78rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: .75rem;
+  color: #6a5e44;
+}
+
+/* ==================
+   RESPONSIVE
+================== */
+@media (max-width: 768px) {
+  .header-inner { flex-direction: column; gap: 12px; }
+  .main-nav { justify-content: center; }
+
+  .intro-grid { grid-template-columns: 1fr; }
+  .taxon-cards { gap: 6px; }
+  .taxon-card { min-width: 80px; padding: 8px 12px; }
+  .taxon-arrow { display: none; }
+
+  .dino-card { padding: 24px 18px; }
+  .dino-body { grid-template-columns: 1fr; }
+  .dino-card-header { flex-direction: column; }
+
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .footer-inner { grid-template-columns: 1fr; gap: 20px; }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+  .dino-name { font-size: 1.35rem; }
+  .hero-title { font-size: 2rem; }
+}
